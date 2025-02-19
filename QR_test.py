@@ -28,7 +28,7 @@ while True:
             code_data = data.data.decode('utf-8')
             polygon = data.polygon
             
-            # 코드 영역 표시 (이미지와 동일)
+            # 코드 영역 표시 (이미지와 동일)bar
             n = len(polygon)
             for i in range(n):
                 cv2.line(frame, polygon[i], polygon[(i+1) % n], (0, 255, 0), 2)
